@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
+  //path '' es la raíz del proyecto. 
+  //Página que se muestra al entrar a la raíz
   {
     path:'',
-    component: AppComponent
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
 
   {
