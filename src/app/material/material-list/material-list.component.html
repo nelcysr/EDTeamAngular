@@ -1,12 +1,27 @@
 <mat-list>
+  <h4>Lista normal</h4>
   <mat-list-item>
     <img mat-line mat-list-avatar src="https://img.icons8.com/color/420/edit-user-female.png" alt="">
     <span matLine>Nelcy Sierra</span>
     <span matLine>Bogotá</span> 
   </mat-list-item>
   <mat-list-item>
-      <img mat-line mat-list-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5TDjHkXbNGlduL7AEVMwGn4bc-QosNt7IRcp9fBJ4qN6N0pmHg" alt="">
-      <span matLine>Pepito Pérez</span>
-      <span matLine>Bogotá</span> 
-    </mat-list-item>
+    <img mat-line mat-list-avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI5TDjHkXbNGlduL7AEVMwGn4bc-QosNt7IRcp9fBJ4qN6N0pmHg" alt="">
+    <span matLine>Pepito Pérez</span>
+    <span matLine>Bogotá</span> 
+  </mat-list-item>
+
+  <h4>Lista con interpolación y actualización de datos</h4>
+  <!-- Interpolación -->
+  <mat-list-item>
+    <img mat-line mat-list-avatar src="{{estudiante1.fotoURL}}" alt="">
+    <span matLine>{{estudiante1.nombre}}</span>
+    <span matLine>{{estudiante1.ciudad}}</span> 
+  </mat-list-item>
+  <mat-list-item>
+    <img mat-line mat-list-avatar src="{{estudiante2.fotoURL}}" alt="">
+    <span matLine>{{estudiante2.nombre}}</span>
+    <span matLine>{{estudiante2.ciudad}}</span> 
+  </mat-list-item>
 </mat-list>
+
